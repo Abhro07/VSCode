@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<!-- saved from url=(0036)http://192.168.31.35:5500/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Visual Studio Code_files/style.css">
+    <title>Visual Studio Code</title>
+</head>
+
+<body>
+
+
+    <style>
+        * {
+            margin: 0%;
+        }
+
+        body {
+            background-color: white;
+            color: black;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+            ;
+        }
+
+        .navigation {
+            justify-content: center;
+            display: grid;
+            grid-template-columns: repeat(10, max-content);
+            grid-template-rows: 58px;
+
+
+
+        }
+
+        .nav-con {
+            padding: 18px;
+            color: #AAAAAA;
+        }
+
+        .nav-con:hover {
+            cursor: pointer;
+            color: black;
+        }
+
+        .vsc {
+            display: grid;
+            grid-template-columns: auto auto auto auto auto auto;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            font-size: 20px;
+
+        }
+
+        .tag {
+            display: grid;
+            grid-template-rows: max-content max-content;
+            text-align: center;
+        }
+
+        .tagline {
+            text-align: center;
+            font-weight: 600;
+            font-size: 40px;
+            padding-top: 45px;
+        }
+
+        .os {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, max-content);
+            margin-left: 15%;
+            margin-right: 17%;
+            margin-top: 78px;
+            text-align: center;
+
+        }
+
+        .os_content {
+            display: grid;
+            grid-template-rows: 1fr 1fr 1fr;
+            align-items: center;
+            justify-items: center;
+
+        }
+
+        .os_btn {
+            font-family: "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell," Helvetica Neue",sans-serif";
+            font-size: 14px;
+            background-color: #0078d4;
+            border-radius: 4px;
+            border-style: none;
+            color: #FFFFFF;
+            padding: 12px 24px;
+            height: max-content;
+        }
+
+        .os_btn:hover {
+            cursor: pointer;
+            background-color: #005ba4;
+        }
+
+        .btn_con {
+            display: grid;
+            grid-template-rows: 1fr 1fr;
+            grid-template-columns: 1fr;
+            gap: 15px;
+            justify-items: center;
+        }
+
+        .light {
+            border-style: none;
+            background-color: #0e0e0e;
+            height: 32px;
+            width: 32px;
+
+        }
+
+        .light:hover {
+            cursor: pointer;
+            background-color: #272727;
+            border-radius: 4px;
+        }
+
+        .search {
+            display: grid;
+            grid-template-rows: 1fr;
+            grid-template-columns: max-content max-content;
+            gap: 8px;
+            border: #272727 solid 1px;
+            border-radius: 4px;
+
+        }
+
+        .btn_search {
+            display: grid;
+            grid-template-columns: max-content max-content;
+            gap: 8px;
+        }
+
+        .srch_txt {
+            background-color: #0e0e0e;
+        }
+
+        .srch_txt:focus-within {
+            border: #0078d4 solid 1px;
+            border-radius: 4px;
+        }
+
+        input {
+            border: 0;
+            outline: 0;
+        }
+
+        input:focus {
+            outline: none !important;
+        }
+
+        .lnx_con {
+            display: grid;
+            grid-template-columns: repeat(2, max-content);
+            grid-template-rows: max-content;
+            gap: 3px;
+        }
+
+        .win_types {
+            display: grid;
+            grid-template-columns: repeat(2, max-content);
+            grid-template-rows: repeat(4, max-content);
+            justify-content: center;
+            align-items: center;
+            gap: 6px;
+            margin-top: 8px;
+        }
+
+        .lnx_type {
+            display: grid;
+            grid-template-columns: repeat(3, max-content);
+            grid-template-rows: repeat(5, max-content);
+            justify-content: center;
+            align-items: center;
+            gap: 3px;
+            margin-top: 8px;
+        }
+
+
+        .sml_btn {
+            background-color: #0078d4;
+            color: #FFFFFF;
+            border-style: none;
+            border-radius: 4px;
+            margin-left: 1px;
+            margin-right: 1px;
+            text-decoration: underline;
+            font-size: 12px;
+            padding: 2px;
+        }
+
+        .sml_btn:hover {
+            background-color: #005ba4;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .TnC {
+            color: #4daafc;
+            text-decoration: underline;
+        }
+
+        .TnC:hover {
+            color: #8fc3fe;
+        }
+
+        .TnC_2 {
+            color: #4daafc;
+
+        }
+
+        .TnC_2:hover {
+            color: #8fc3fe;
+            text-decoration: underline;
+        }
+
+        .feature {
+            display: grid;
+            grid-template-columns: repeat(2, max-content);
+            grid-template-rows: max-content;
+            text-align: center;
+            margin-top: 8%;
+            margin-left: 20%;
+            gap: 30%;
+        }
+
+        .footer {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            margin-top: 30px;
+        }
+
+        .footer_end {
+            color: #AAAAAA;
+            font-size: 12px;
+            font-weight: 500;
+        }
+
+        .footer_end:hover {
+            cursor: pointer;
+        }
+    </style>
+    
+
+    
+        <title>Download Visual Studio Code</title>
+        <link rel="icon" href="./Visual Studio Code_files/vs.png">
+    
+
+    
+        <div class="navigation">
+            <div style="padding: 18px; margin-top: -4px; cursor: pointer;">
+                <img style="float: left; margin-right: 5px;" src="./Visual Studio Code_files/vs.png" height="24px" width="24px">
+                <b style="text-wrap:nowrap; font-size: 20px;">Visual Studio Code</b>
+            </div>
+            <div class="nav-con">Docs</div>
+            <div class="nav-con">Updates</div>
+            <div class="nav-con">Blog</div>
+            <div class="nav-con">API</div>
+            <div class="nav-con">Extensions</div>
+            <div class="nav-con">FAQ</div>
+            <div class="nav-con">Learn</div>
+            <div class="nav-con btn_search" style="padding-top: 10px; margin-left: 50px;">
+                <button class="light"><img src="./Visual Studio Code_files/theme-light.svg" height="20px"></button>
+                <div class="search srch_txt">
+                    <div><img style="padding-bottom: 5px; padding-top: 8px; padding-left: 8px;" src="./Visual Studio Code_files/search-dark.svg">
+                    </div>
+                    <div>
+                        <input style="background-color:#0e0e0e;color: #929aaa; font-size: 14px; border-style: none; text-decoration: none; height: 30px;padding-top: 5px;
+                    padding-right: 12px;
+                    padding-bottom: 5px;" type="search" placeholder="Search Docs">
+                    </div>
+                </div>
+            </div>
+            <div style="margin-top: 11px;">
+                <button class="os_btn" style="line-height: 50%; font-size: 16px; font-weight: 600; margin-right: 25px;">Download</button>
+            </div>
+
+        </div>
+
+        <div class="tag">
+            <h1 class="tagline">Download Visual Studio Code</h1>
+            <h3 style=" color:#9ba3b4; text-wrap:balance; font-weight: 400; margin-top: 12px; font-size: 21px;">Free and
+                built on open source. Integrated Git, debugging and extensions.</h3>
+        </div>
+
+
+
+
+
+        <div class="os">
+            <div><img src="./Visual Studio Code_files/windows.png" alt="Microsoft" height="100px" width="100px" style="margin-left: 10px;"></div>
+            <div><img src="./Visual Studio Code_files/linux-logo.png" alt="Linux" height="100px" style="margin-right: 15px;"></div>
+            <div><img src="./Visual Studio Code_files/apple-logo-inverted.svg" alt="Apple" height="100px"></div>
+
+            <div><button class="os_btn" style="margin-top: 10px;">
+                    <div class="btn_con">ss
+                        <div>
+                            <img style="margin-right: 10px;" width="18px" height="18px" src="./Visual Studio Code_files/download.svg" alt="download--v1">
+                            <b style="font-size: large;">Windows</b><br>
+                        </div>
+                        <div>
+                            <span style="font-size: small;"><b>Windows 10, 11</b></span>
+                        </div>
+                    </div>
+                </button>
+            </div>
+            <div style="display: grid; grid-template-columns: repeat(2,max-content); gap:3px;">
+                <button class="os_btn" style="margin-top: 10px;">
+                    <div class="btn_con">
+                        <div>
+                            <img style="margin-right: 10px;" width="18px" height="18px" src="./Visual Studio Code_files/download.svg" alt="download--v1">
+                            <b style="font-size: large;">.deb</b><br>
+                        </div>
+                        <div>
+                            <span style="font-size: small;"><b>Debian, Ubuntu</b></span>
+                        </div>
+                    </div>
+                </button>
+                <button class="os_btn" style="margin-top: 10px;">
+                    <div class="btn_con">
+                        <div>
+                            <img style="margin-right: 10px;" width="18px" height="18px" src="./Visual Studio Code_files/download.svg" alt="download--v1">
+                            <b style="font-size: large;">.rpm</b><br>
+                        </div>
+                        <div>
+                            <span style="font-size: small;"><b>Red Hat, Fedora, SUSE</b></span>
+                        </div>
+                    </div>
+                </button>
+            </div>
+            <div><button class="os_btn" style="margin-top: 10px;">
+                    <div class="btn_con">
+                        <div>
+                            <img style="margin-right: 10px;" width="18px" height="18px" src="./Visual Studio Code_files/download.svg" alt="download--v1">
+                            <b style="font-size: large;">Mac</b><br>
+                        </div>
+                        <div>
+                            <span style="font-size: small;"><b>macOS 10.5+</b></span>
+                        </div>
+                    </div>
+                </button>
+            </div>
+            <div class="win_types">
+                <div style="color: #9ba3b4; font-weight: 600; font-size: 15px; font-family: apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif;">
+                    User Installer</div>
+                <div><button class="sml_btn">x64</button><button class="sml_btn">Arm64</button></div>
+
+                <div style="color: #9ba3b4; font-weight: 600; font-size: 15px; font-family: apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif;">
+                    System <br>Installer</div>
+                <div><button class="sml_btn">x64</button><button class="sml_btn">Arm64</button></div>
+
+                <div style="color: #9ba3b4; font-weight: 600; font-size: 15px; font-family: apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif;">
+                    .zip </div>
+                <div><button class="sml_btn">x64</button><button class="sml_btn">Arm64</button></div>
+
+                <div style="color: #9ba3b4; font-weight: 600; font-size: 15px; font-family: apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif;">
+                    CLI</div>
+                <div><button class="sml_btn">x64</button><button class="sml_btn">Arm64</button></div>
+
+            </div>
+
+
+            <div class="lnx_type">
+                <div style=" color: #9ba3b4; font-weight: 600; font-size: 15px; font-family: apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif;">
+                    .deb</div>
+                <div><button class="sml_btn">x64</button><button class="sml_btn">Arm32</button></div>
+                <div><button class="sml_btn">Arm64</button></div>
+
+                <div style="color: #9ba3b4; font-weight: 600; font-size: 15px; font-family: apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif;">
+                    .rpm</div>
+                <div><button class="sml_btn">x64</button><button class="sml_btn">Arm32</button></div>
+                <div><button class="sml_btn">Arm64</button></div>
+                <div style="color: #9ba3b4; font-weight: 600; font-size: 15px; font-family: apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif;">
+                    .tar.gz</div>
+                <div><button class="sml_btn">x64</button><button class="sml_btn">Arm32</button></div>
+                <div><button class="sml_btn">Arm64</button></div>
+                <div style="color: #9ba3b4; font-weight: 600; font-size: 15px; font-family: apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif;">
+                    Snap</div>
+                <div><button class="sml_btn">Snap Store</button></div>
+                <div></div>
+                <div style="color: #9ba3b4; font-weight: 600; font-size: 15px; font-family: apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif;">
+                    CLI</div>
+                <div><button class="sml_btn">x64</button><button class="sml_btn">Arm32</button></div>
+                <div><button class="sml_btn">Arm64</button></div>
+
+
+            </div>
+            <div class="lnx_type">
+                <div style=" color: #9ba3b4; font-weight: 600; font-size: 15px; font-family: apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif;">
+                    .zip</div>
+                <div><button class="sml_btn">Intel chip</button><button class="sml_btn">Apple slicon</button></div>
+                <div><button class="sml_btn">Universal</button></div>
+                <div style="color: #9ba3b4; font-weight: 600; font-size: 15px; font-family: apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif;">
+                    CLI</div>
+                <div><button class="sml_btn">Intel chip</button><button class="sml_btn">Apple silicon</button></div>
+
+
+            </div>
+        </div>
+        <div style="height: 200px; text-align: center; margin-top: 6%; font-size:14px; color: #AAAAAA;">By downloading
+            and
+            using Visual Studio Code, you agree to the <span class="TnC">license terms</span> and <span class="TnC">privacy
+                statement</span>.<div></div>
+
+            <div class="feature">
+                <div>
+                    <span style="font-size: 20px; font-weight: 600;">Want new features sooner?</span><br><br>
+                    <span style="font-size: 18px;">Get the <span class="TnC">Insiders build</span> instead.</span>
+                </div>
+                <div>
+
+                    <span style="font-size: 20px; font-weight: 600;">Use <span class="TnC">vscode.dev</span> for
+                        quick<br>edits online!</span><br><br>
+                    <span style="font-size: 18px;">GitHub, Azure Repos, and local<br> files.</span>
+                </div>
+            </div>
+
+            <div style="margin-top: 4%; gap: 12px; display: grid; grid-template-columns: max-content; grid-template-rows:repeat(2,max-content); justify-content: center;">
+                <div class="TnC">Get previous versions</div>
+                <div class="TnC_2">See SHA-256 Hashes</div>
+            </div>
+
+
+
+            <div class="footer">
+                <div><img style="margin-left: -30%; margin-right: 25px;" src="./Visual Studio Code_files/x-icon.svg" alt="X" width="19px"><img style="margin-right: 25px;" src="./Visual Studio Code_files/github-icon.svg" alt="Github" width="24px">
+                    <img src="./Visual Studio Code_files/youtube-icon.svg" alt="YouTube" width="24px">
+                </div>
+                <div><img style="margin-left: 45%;" src="./Visual Studio Code_files/microsoft.svg" width="24px"></div>
+            </div>
+            <div class="footer_end">
+                <span style="margin-left: -53%; margin-right: 20px;">Support</span> <span style="margin-right: 20px;">
+                    Privacy</span> <span style="margin-right: 20px;"> Terms of Use</span> <span style="margin-right: 20px;"> License</span>
+            </div><br><br><br><br><br><br><br>
+    <!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+    
+</div><textarea id="BFI_DATA" style="width: 1px; height: 1px; display: none;"></textarea><title> </title><div id="WidgetFloaterPanels" translate="no" style="display: none; text-align: left; direction: ltr; visibility: hidden;" class="LTRStyle"> <div id="WidgetFloater" style="display: none" onmouseover="Microsoft.Translator.OnMouseOverFloater()" onmouseout="Microsoft.Translator.OnMouseOutFloater()"> <div id="WidgetLogoPanel"> <span id="WidgetTranslateWithSpan"><span>TRANSLATE with </span><img id="FloaterLogo"></span> <span id="WidgetCloseButton" title="Exit Translation" onclick="Microsoft.Translator.FloaterOnClose()">x</span></div> <div id="LanguageMenuPanel"> <div class="DDStyle_outer"><input name="LanguageMenu_svid" type="text" id="LanguageMenu_svid" style="display:none;" autocomplete="on" value="en" onclick="this.select()"> <input name="LanguageMenu_textid" type="text" id="LanguageMenu_textid" style="display:none;" autocomplete="on" onclick="this.select()"> <span onselectstart="return false" tabindex="0" class="DDStyle" id="__LanguageMenu_header" onclick="return LanguageMenu &amp;&amp; !LanguageMenu.Show(&#39;__LanguageMenu_popup&#39;, event);" onkeydown="return LanguageMenu &amp;&amp; !LanguageMenu.Show(&#39;__LanguageMenu_popup&#39;, event);">English</span> <div style="position:relative;text-align:left;left:0;"><div style="position:absolute;width:;left:0px;"><div class="DDStyle" style="display:none;" id="__LanguageMenu_popup"> <table id="LanguageMenu" border="0"> <tbody><tr> <td><a tabindex="-1" onclick="return LanguageMenu.onclick(&#39;ar&#39;);" ondragstart="LanguageMenu.ondragstart(event);" href="http://192.168.31.35:5500/index.html#ar">Arabic</a></td><td><a tabindex="-1" onclick="return LanguageMenu.onclick(&#39;he&#39;);" ondragstart="LanguageMenu.ondragstart(event);" href="http://192.168.31.35:5500/index.html#he">Hebrew</a></td><td><a tabindex="-1" onclick="return LanguageMenu.onclick(&#39;pl&#39;);" ondragstart="LanguageMenu.ondragstart(event);" href="http://192.168.31.35:5500/index.html#pl">Polish</a></td> </tr><tr> <td><a tabindex="-1" onclick="return LanguageMenu.onclick(&#39;bg&#39;);" ondragstart="LanguageMenu.ondragstart(event);" href="http://192.168.31.35:5500/index.html#bg">Bulgarian</a></td><td><a tabindex="-1" onclick="return LanguageMenu.onclick(&#39;hi&#39;);" ondragstart="LanguageMenu.ondragstart(event);" href="http://192.168.31.35:5500/index.html#hi">Hindi</a></td><td><a tabindex="-1" onclick="return LanguageMenu.onclick(&#39;pt&#39;);" ondragstart="LanguageMenu.ondragstart(event);" href="http://192.168.31.35:5500/index.html#pt">Portuguese</a></td> </tr><tr> <td><a tabindex="-1" onclick="return LanguageMenu.onclick(&#39;ca&#39;);" ondragstart="LanguageMenu.ondragstart(event);" href="http://192.168.31.35:5500/index.html#ca">Catalan</a></td><td><a tabindex="-1" onclick="return LanguageMenu.onclick(&#39;mww&#39;);" ondragstart="LanguageMenu.ondragstart(event);" href="http://192.168.31.35:5500/index.html#mww">Hmong Daw</a></td><td><a tabindex="-1" onclick="return LanguageMenu.onclick(&#39;ro&#39;);" ondragstart="LanguageMenu.ondragstart(event);" href="http://192.168.31.35:5500/index.html#ro">Romanian</a></td> </tr><tr> <td><a tabindex="-1" onclick="return LanguageMenu.onclick(&#39;zh-CHS&#39;);" ondragstart="LanguageMenu.ondragstart(event);" href="http://192.168.31.35:5500/index.html#zh-CHS">Chinese Simplified</a></td><td><a tabindex="-1" onclick="return LanguageMenu.onclick(&#39;hu&#39;);" ondragstart="LanguageMenu.ondragstart(event);" href="http://192.168.31.35:5500/index.html#hu">Hungarian</a></td><td><a tabindex="-1" onclick="return LanguageMenu.onclick(&#39;ru&#39;);" ondragstart="LanguageMenu.ondragstart(event);" href="http://192.168.31.35:5500/index.html#ru">Russian</a></td> </tr><tr> <td><a tabindex="-1" onclick="return LanguageMenu.onclick(&#39;zh-CHT&#39;);" ondragstart="LanguageMenu.ondragstart(event);" href="http://192.168.31.35:5500/index.html#zh-CHT">Chinese Traditional</a></td><td><a tabindex="-1" onclick="return LanguageMenu.onclick(&#39;id&#39;);" ondragstart="LanguageMenu.ondragstart(event);" href="http://192.168.31.35:5500/index.html#id">Indonesian</a></td><td><a tabindex="-1" onclick="return LanguageMenu.onclick(&#39;sk&#39;);" ondragstart="LanguageMenu.ondragstart(event);" href="http://192.168.31.35:5500/index.html#sk">Slovak</a></td> </tr><tr> <td><a tabindex="-1" onclick="return LanguageMenu.onclick(&#39;cs&#39;);" ondragstart="LanguageMenu.ondragstart(event);" href="http://192.168.31.35:5500/index.html#cs">Czech</a></td><td><a tabindex="-1" onclick="return LanguageMenu.onclick(&#39;it&#39;);" ondragstart="LanguageMenu.ondragstart(event);" href="http://192.168.31.35:5500/index.html#it">Italian</a></td><td><a tabindex="-1" onclick="return LanguageMenu.onclick(&#39;sl&#39;);" ondragstart="LanguageMenu.ondragstart(event);" href="http://192.168.31.35:5500/index.html#sl">Slovenian</a></td> </tr><tr> <td><a tabindex="-1" onclick="return LanguageMenu.onclick(&#39;da&#39;);" ondragstart="LanguageMenu.ondragstart(event);" href="http://192.168.31.35:5500/index.html#da">Danish</a></td><td><a tabindex="-1" onclick="return LanguageMenu.onclick(&#39;ja&#39;);" ondragstart="LanguageMenu.ondragstart(event);" href="http://192.168.31.35:5500/index.html#ja">Japanese</a></td><td><a tabindex="-1" onclick="return LanguageMenu.onclick(&#39;es&#39;);" ondragstart="LanguageMenu.ondragstart(event);" href="http://192.168.31.35:5500/index.html#es">Spanish</a></td> </tr><tr> <td><a tabindex="-1" onclick="return LanguageMenu.onclick(&#39;nl&#39;);" ondragstart="LanguageMenu.ondragstart(event);" href="http://192.168.31.35:5500/index.html#nl">Dutch</a></td><td><a tabindex="-1" onclick="return LanguageMenu.onclick(&#39;tlh&#39;);" ondragstart="LanguageMenu.ondragstart(event);" href="http://192.168.31.35:5500/index.html#tlh">Klingon</a></td><td><a tabindex="-1" onclick="return LanguageMenu.onclick(&#39;sv&#39;);" ondragstart="LanguageMenu.ondragstart(event);" href="http://192.168.31.35:5500/index.html#sv">Swedish</a></td> </tr><tr> <td><a tabindex="-1" onclick="return LanguageMenu.onclick(&#39;en&#39;);" ondragstart="LanguageMenu.ondragstart(event);" href="http://192.168.31.35:5500/index.html#en">English</a></td><td><a tabindex="-1" onclick="return LanguageMenu.onclick(&#39;ko&#39;);" ondragstart="LanguageMenu.ondragstart(event);" href="http://192.168.31.35:5500/index.html#ko">Korean</a></td><td><a tabindex="-1" onclick="return LanguageMenu.onclick(&#39;th&#39;);" ondragstart="LanguageMenu.ondragstart(event);" href="http://192.168.31.35:5500/index.html#th">Thai</a></td> </tr><tr> <td><a tabindex="-1" onclick="return LanguageMenu.onclick(&#39;et&#39;);" ondragstart="LanguageMenu.ondragstart(event);" href="http://192.168.31.35:5500/index.html#et">Estonian</a></td><td><a tabindex="-1" onclick="return LanguageMenu.onclick(&#39;lv&#39;);" ondragstart="LanguageMenu.ondragstart(event);" href="http://192.168.31.35:5500/index.html#lv">Latvian</a></td><td><a tabindex="-1" onclick="return LanguageMenu.onclick(&#39;tr&#39;);" ondragstart="LanguageMenu.ondragstart(event);" href="http://192.168.31.35:5500/index.html#tr">Turkish</a></td> </tr><tr> <td><a tabindex="-1" onclick="return LanguageMenu.onclick(&#39;fi&#39;);" ondragstart="LanguageMenu.ondragstart(event);" href="http://192.168.31.35:5500/index.html#fi">Finnish</a></td><td><a tabindex="-1" onclick="return LanguageMenu.onclick(&#39;lt&#39;);" ondragstart="LanguageMenu.ondragstart(event);" href="http://192.168.31.35:5500/index.html#lt">Lithuanian</a></td><td><a tabindex="-1" onclick="return LanguageMenu.onclick(&#39;uk&#39;);" ondragstart="LanguageMenu.ondragstart(event);" href="http://192.168.31.35:5500/index.html#uk">Ukrainian</a></td> </tr><tr> <td><a tabindex="-1" onclick="return LanguageMenu.onclick(&#39;fr&#39;);" ondragstart="LanguageMenu.ondragstart(event);" href="http://192.168.31.35:5500/index.html#fr">French</a></td><td><a tabindex="-1" onclick="return LanguageMenu.onclick(&#39;ms&#39;);" ondragstart="LanguageMenu.ondragstart(event);" href="http://192.168.31.35:5500/index.html#ms">Malay</a></td><td><a tabindex="-1" onclick="return LanguageMenu.onclick(&#39;ur&#39;);" ondragstart="LanguageMenu.ondragstart(event);" href="http://192.168.31.35:5500/index.html#ur">Urdu</a></td> </tr><tr> <td><a tabindex="-1" onclick="return LanguageMenu.onclick(&#39;de&#39;);" ondragstart="LanguageMenu.ondragstart(event);" href="http://192.168.31.35:5500/index.html#de">German</a></td><td><a tabindex="-1" onclick="return LanguageMenu.onclick(&#39;mt&#39;);" ondragstart="LanguageMenu.ondragstart(event);" href="http://192.168.31.35:5500/index.html#mt">Maltese</a></td><td><a tabindex="-1" onclick="return LanguageMenu.onclick(&#39;vi&#39;);" ondragstart="LanguageMenu.ondragstart(event);" href="http://192.168.31.35:5500/index.html#vi">Vietnamese</a></td> </tr><tr> <td><a tabindex="-1" onclick="return LanguageMenu.onclick(&#39;el&#39;);" ondragstart="LanguageMenu.ondragstart(event);" href="http://192.168.31.35:5500/index.html#el">Greek</a></td><td><a tabindex="-1" onclick="return LanguageMenu.onclick(&#39;no&#39;);" ondragstart="LanguageMenu.ondragstart(event);" href="http://192.168.31.35:5500/index.html#no">Norwegian</a></td><td><a tabindex="-1" onclick="return LanguageMenu.onclick(&#39;cy&#39;);" ondragstart="LanguageMenu.ondragstart(event);" href="http://192.168.31.35:5500/index.html#cy">Welsh</a></td> </tr><tr> <td><a tabindex="-1" onclick="return LanguageMenu.onclick(&#39;ht&#39;);" ondragstart="LanguageMenu.ondragstart(event);" href="http://192.168.31.35:5500/index.html#ht">Haitian Creole</a></td><td><a tabindex="-1" onclick="return LanguageMenu.onclick(&#39;fa&#39;);" ondragstart="LanguageMenu.ondragstart(event);" href="http://192.168.31.35:5500/index.html#fa">Persian</a></td><td></td> </tr> </tbody></table> <img alt="" style="height:7px;width:17px;border-width:0px;left:20px;"> </div></div></div></div> <script type="text/javascript"> var LanguageMenu; var LanguageMenu_keys=["ar","bg","ca","zh-CHS","zh-CHT","cs","da","nl","en","et","fi","fr","de","el","ht","he","hi","mww","hu","id","it","ja","tlh","ko","lv","lt","ms","mt","no","fa","pl","pt","ro","ru","sk","sl","es","sv","th","tr","uk","ur","vi","cy"]; var LanguageMenu_values=["Arabic","Bulgarian","Catalan","Chinese Simplified","Chinese Traditional","Czech","Danish","Dutch","English","Estonian","Finnish","French","German","Greek","Haitian Creole","Hebrew","Hindi","Hmong Daw","Hungarian","Indonesian","Italian","Japanese","Klingon","Korean","Latvian","Lithuanian","Malay","Maltese","Norwegian","Persian","Polish","Portuguese","Romanian","Russian","Slovak","Slovenian","Spanish","Swedish","Thai","Turkish","Ukrainian","Urdu","Vietnamese","Welsh"]; var LanguageMenu_callback=function(){ }; var LanguageMenu_popupid='__LanguageMenu_popup'; </script> </div> <div id="CTFLinksPanel"> <span id="ExternalLinksPanel"><a id="HelpLink" title="Help" target="_blank" href="https://go.microsoft.com/?linkid=9722454"> <img id="HelpImg"></a> <a id="EmbedLink" href="javascript:Microsoft.Translator.FloaterShowEmbed()" title="Get this widget for your own site"> <img id="EmbedImg"></a> <a id="ShareLink" title="Share translated page with friends" href="javascript:Microsoft.Translator.FloaterShowSharePanel()"> <img id="ShareImg"></a> </span> </div> <div id="FloaterProgressBar"> <span id="ProgressFill"></span> </div> </div> <div id="WidgetFloaterCollapsed" style="display: none" onmouseover="Microsoft.Translator.OnMouseOverFloater()"> <span>TRANSLATE with </span><img id="CollapsedLogoImg"></div> <div id="FloaterSharePanel" style="display: none"> <div id="ShareTextDiv"> <span id="ShareTextSpan"> COPY THE URL BELOW </span> </div> <div id="ShareTextboxDiv"> <input name="ShareTextbox" type="text" id="ShareTextbox" readonly="readonly" onclick="this.select()"> <!--a id="TwitterLink" title="Share on Twitter"> <img id="TwitterImg" /></a> <a-- id="FacebookLink" title="Share on Facebook"> <img id="FacebookImg" /></a--> <a id="EmailLink" title="Email this translation"> <img id="EmailImg"></a> </div> <div id="ShareFooter"> <span id="ShareHelpSpan"><a id="ShareHelpLink"> <img id="ShareHelpImg"></a></span> <span id="ShareBackSpan"><a id="ShareBack" href="javascript:Microsoft.Translator.FloaterOnShareBackClick()" title="Back To Translation"> Back</a></span> </div> <input name="EmailSubject" type="hidden" id="EmailSubject" value="Check out this page in {0} translated from {1}"> <input name="EmailBody" type="hidden" id="EmailBody" value="Translated: {0}%0d%0aOriginal: {1}%0d%0a%0d%0aAutomatic translation powered by Microsoft® Translator%0d%0ahttp://www.bing.com/translator?ref=MSTWidget"> <input type="hidden" id="ShareHelpText" value="This link allows visitors to launch this page and automatically translate it to {0}."> </div> <div id="FloaterEmbed" style="display: none"> <div id="EmbedTextDiv"> <span id="EmbedTextSpan">EMBED THE SNIPPET BELOW IN YOUR SITE</span> <a id="EmbedHelpLink" title="Copy this code and place it into your HTML."> <img id="EmbedHelpImg"></a> </div> <div id="EmbedTextboxDiv"> <input name="EmbedSnippetTextBox" type="text" id="EmbedSnippetTextBox" readonly="readonly" value="&lt;div id=&#39;MicrosoftTranslatorWidget&#39; class=&#39;Dark&#39; style=&#39;color:white;background-color:#555555&#39;&gt;&lt;/div&gt;&lt;script type=&#39;text/javascript&#39;&gt;setTimeout(function(){var s=document.createElement(&#39;script&#39;);s.type=&#39;text/javascript&#39;;s.charset=&#39;UTF-8&#39;;s.src=((location &amp;&amp; location.href &amp;&amp; location.href.indexOf(&#39;https&#39;) == 0)?&#39;https://ssl.microsofttranslator.com&#39;:&#39;http://www.microsofttranslator.com&#39;)+&#39;/ajax/v3/WidgetV3.ashx?siteData=ueOIGRSKkd965FeEGM5JtQ**&amp;ctf=true&amp;ui=true&amp;settings=manual&amp;from=en&#39;;var p=document.getElementsByTagName(&#39;head&#39;)[0]||document.documentElement;p.insertBefore(s,p.firstChild); },0);&lt;/script&gt;" onclick="this.select()"> </div> <div id="EmbedNoticeDiv"><span id="EmbedNoticeSpan">Enable collaborative features and customize widget: <a href="http://www.bing.com/widget/translator" target="_blank">Bing Webmaster Portal</a></span></div> <div id="EmbedFooterDiv"><span id="EmbedBackSpan"><a href="javascript:Microsoft.Translator.FloaterOnEmbedBackClick()" title="Back To Translation">Back</a></span></div> </div> <script type="text/javascript"> var intervalId = setInterval(function () { if (MtPopUpList) { LanguageMenu = new MtPopUpList(); var langMenu = document.getElementById(LanguageMenu_popupid); var origLangDiv = document.createElement("div"); origLangDiv.id = "OriginalLanguageDiv"; origLangDiv.innerHTML = "<span id='OriginalTextSpan'>ORIGINAL: </span><span id='OriginalLanguageSpan'></span>"; langMenu.appendChild(origLangDiv); LanguageMenu.Init('LanguageMenu', LanguageMenu_keys, LanguageMenu_values, LanguageMenu_callback, LanguageMenu_popupid); window["LanguageMenu"] = LanguageMenu; clearInterval(intervalId); } }, 1); </script> </div></body></html>
